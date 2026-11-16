@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Веб-интерфейс для работы с нечёткими величинами Стьюдента",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "chart.js": "^4.6.1",
+    "fuzzy-lib": "^1.0.0",
+    "katex": "^0.19.1",
+    "react": "^19.3.1",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "vite": "^8.3.6"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "fuzzy-student",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Нечёткие величины с функцией принадлежности распределения Стьюдента: библиотека, сервер журнала и веб-интерфейс",
+  "type": "module",
+  "workspaces": [
+    "packages/fuzzy-lib",
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "build:lib": "npm run build -w fuzzy-lib",
+    "dev": "npm run build:lib && concurrently -k -n server,web -c blue,green \"npm run dev -w server\" \"npm run dev -w web\"",
+    "build": "npm run build -w fuzzy-lib && npm run typecheck -w server && npm run build -w web",
+    "start": "npm run build && npm run start -w server",
+    "test": "npm run test -w fuzzy-lib"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "fuzzy-lib",
+  "version": "1.0.0",
+  "description": "Библиотека нечётких величин Стьюдента T(x0, s, nu): операции, генерация, статистики, кластеризация k-means",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^5.1.0"
+  }
+}
