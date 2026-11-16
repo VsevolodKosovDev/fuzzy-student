@@ -1,5 +1,5 @@
-/** Ссылка на репозиторий проекта — замените на адрес своего репозитория. */
-export const REPO_URL = "https://github.com/USERNAME/fuzzy-student";
+/** Ссылка на репозиторий проекта. */
+export const REPO_URL = "https://github.com/VsevolodKosovDev/fuzzy-student";
 
 /** Максимальное число кластеров — по числу различимых цветов палитры. */
 export const MAX_CLUSTERS = 8;
